@@ -3,6 +3,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
+  padding-left: calc(100vh - 100%);
 }
 
 body {
@@ -11,3 +14,18 @@ body {
   box-sizing: border-box;
 }
 
+.button {
+  background-color: #003c64;
+  color: #fff;
+  width: 220px;
+  height: 60px;
+
+  padding: 10px;
+  font-size: 1.125rem;
+  transition: ease 0.25s;
+}
+
+.button:hover {
+  background-color: #80ccff;
+  color: #333;
+}
