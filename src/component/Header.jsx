@@ -8,7 +8,7 @@ export default function Header(props) {
 
   const listItems = props.sections.map((item) => (
     <li className="nav__item" key={item.id}>
-      <a href={`#section${item.id}`}>{item.name}</a>
+      <a className="nav__link" href={`#section-${item.name}`}>{item.name}</a>
     </li>
   ));
 
@@ -29,20 +29,20 @@ export default function Header(props) {
         setTimeout(() => {
           setIsNavOpen((prev) => !prev);
           setIsSpam(false);
-        }, 500);
+        }, 300);
       } else {
         setIsNavOpen((prev) => !prev);
         
         setTimeout(() => {
           setIsSpam(false);
-        }, 500);
+        }, 300);
       }
     }
   }
 
   return (
     <header className="header">
-      <h1 className="header__logo">{props.pageName}</h1>
+      <h1 className="header__logo">{props.pageLogo}</h1>
       <div className="dropdown">
         <button className="header__button button" onClick={toggleNav}>
           ☰
@@ -60,5 +60,5 @@ Header.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ),
-  pageName: PropTypes.string.isRequired,
+  pageLogo: PropTypes.string.isRequired,
 };

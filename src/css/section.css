@@ -1,0 +1,230 @@
+section {
+    height: 100vh;
+}
+
+
+/*-----------hero-----------*/
+.hero {
+    background-image: url("../assets/ScaleAndGavel.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    color: #fff;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.hero__title{
+    font-size: 5rem;
+    margin: 0 100px;
+
+    height: 200px;
+    width: 800px;
+}
+
+.hero__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 200px;
+}
+
+.hero__detail {
+    height: 150px;
+    width: 550px;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*-----------reasons-----------*/
+.reasons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.reasons__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+    text-align: center;
+}
+
+.reasons__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.reasons__image {
+    height: 600px;
+    width: 400px;
+}
+
+
+/*-----------objectives-----------*/
+.objectives {
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 50px;
+    box-sizing: border-box;
+
+    background-color: #323232;
+}
+
+.objectives__title {
+    width: 15%;
+    color: #fff;
+}
+
+.objectives__details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+}
+
+.objectives__item {
+    width: 350px;
+    height: 300px;
+
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.objectives__details-image {
+    width: 350px;
+    height: 300px;
+}
+
+.objectives__item:nth-child(1) {
+    background-color: #003c64;
+    color: #fff;
+}
+
+.objectives__item:nth-child(2) {
+    background-color: #e3dfd6;
+}
+
+.objectives__item:nth-child(3) {
+    background-color: #fff;
+}
+
+
+/*-----------services-----------*/
+.services {
+    display: flex;
+    flex-direction: column;
+
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.services__image {
+    height: 60%;
+    background-image: url('../assets/LawConsultant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.services__detail{
+    display: flex;
+}
+
+.services__title {
+    min-width: 60%;
+    text-align: center;
+}
+
+
+
+/*-----------testimonial-----------*/
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #e3dfd6;
+    padding: 50px 100px;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.testimonial__title {
+    margin: 10px
+}
+
+.testimonial__subtitle {
+    margin-top: 0;
+}
+
+.testimonial__list {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.testimonial__item {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+}
+
+.testimonial__detail {
+    margin: 0  0 50px;
+}
+
+.testimonial__item-image {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial__user {
+    border-top: solid #000 1px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}

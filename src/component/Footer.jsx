@@ -1,3 +1,3 @@
 export default function Footer() {
-    return <footer>This is a Footer</footer>
+    return <footer id="footer">This is a Footer</footer>
 }

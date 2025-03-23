@@ -1,22 +1,19 @@
 import Main from "./Main";
 import Header from "./Header";
 import Footer from "./Footer";
+import { useState } from "react";
 
 export default function App() {
-  const sections = [
-    { id: 1, name: "hero" },
-    { id: 2, name: "reason" },
-    { id: 3, name: "objectives" },
-    { id: 4, name: "services" },
-    { id: 5, name: "testimonial" },
-  ];
+  const [sections, setSections] = useState([]);
 
-  const pageName = "Văn Phòng Luật ABC XYZ"
+  const pageLogo = "Văn Phòng Luật ABC XYZ";
 
   return (
     <>
-      <Header sections={sections} pageName={pageName}/>
-      <Main />
+      {sections.length > 0 && (
+        <Header sections={sections} pageLogo={pageLogo} />
+      )}
+      <Main setSections={setSections} />
       <Footer />
     </>
   );

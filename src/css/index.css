@@ -6,6 +6,7 @@
 
   scroll-behavior: smooth;
   padding-left: calc(100vh - 100%);
+  font-size:  20px;
 }
 
 body {
